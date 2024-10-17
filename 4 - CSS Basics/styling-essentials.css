@@ -1,0 +1,79 @@
+#text-styling {
+  /* Font fallback - if not available, it will choose the next font available */
+  /* Default font style for sans-serif is Arial */
+  font-family: Arial, "Courier New", Courier, monospace, sans-serif;
+
+  /* Font weight - numerical */
+  font-weight: 100;
+  font-weight: 900;
+
+  /* Font weight - keyword */
+  font-weight: bold;
+  font-weight: lighter;
+  font-weight: normal;
+  font-weight: bolder;
+
+  /* Font style */
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal;
+
+  /* Text Align */
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  text-align: justify;
+
+  /* Line Height - Applies to top and bottom of a line */
+  line-height: 3;
+  line-height: 150%;
+  line-height: 25px;
+
+  /* Letter spacing */
+  letter-spacing: 3px;
+  letter-spacing: normal;
+  letter-spacing: -1px;
+}
+
+#text-decoration {
+  /* For adding text decorations (line) */
+  text-decoration-line: none;
+  text-decoration-line: underline;
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+
+  text-decoration-style: solid;
+  text-decoration-style: dotted;
+  text-decoration-style: wavy;
+  text-decoration-style: double;
+
+  text-decoration-color: tomato;
+
+  text-decoration-thickness: 3px;
+  text-decoration-thickness: 30%;
+
+  text-decoration: 5px solid red line-through;
+}
+
+#colors {
+  color: orange;
+  background-color: grey;
+  /* 0-255 - The higher number is the dominant color*/
+  color: rgb(60, 120, 148);
+  /* Alpha value 0 = transparent, 1 = fully opaque*/
+  color: rgba(60, 120, 148, 1);
+}
+
+#absolute-unit-px {
+  font-size: 24px;
+}
+
+/* relative parent element */
+#relative-unit-em {
+  font-size: 2em;
+}
+
+/* relative root element */
+#relative-unit-rem {
+  font-size: 3rem;
+}

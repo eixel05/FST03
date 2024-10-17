@@ -1,0 +1,40 @@
+/* Element Styling - using the tag. It will apply to all same tags */
+span {
+  color: white;
+  background-color: tomato;
+}
+
+/* Class selector */
+.intro-paragraphs {
+  color: cyan;
+  background-color: grey;
+}
+
+/* ID selector */
+#main-heading {
+  color: green;
+  font-size: 25px;
+}
+
+/* Universal selector - Applies to all that don't have specific styling */
+* {
+  font-size: 40px;
+}
+
+/* Grouping selector - separate different selectors with a comma*/
+h1,
+h2,
+.about-content {
+  color: blue;
+}
+
+/* Descendant selector - class(space)tag */
+.article-container p {
+  color: red;
+}
+
+/* Pseudo Class Selector - "tag:behavior" */
+a:hover {
+  color: yellow;
+  background-color: green;
+}
