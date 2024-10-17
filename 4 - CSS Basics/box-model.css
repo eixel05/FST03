@@ -8,61 +8,58 @@
 
 /* Setting padding shorthand - on all sides */
 .box2 {
-    padding: 20px;
-/* Setting padding with 2 values adjust (1st)top=bottom and (2nd)left=right */
-    padding: 20px 10px;
-/* Setting padding with 3 values adjust (1st)top (2nd)left=right (3rd)bottom */
-    padding: 20px 10px 30px;
-/* Setting padding with 4 values adjust T - R - B - L */
-    padding: 20px 10px 30px 40px;
+  padding: 20px;
+  /* Setting padding with 2 values adjust (1st)top=bottom and (2nd)left=right */
+  padding: 20px 10px;
+  /* Setting padding with 3 values adjust (1st)top (2nd)left=right (3rd)bottom */
+  padding: 20px 10px 30px;
+  /* Setting padding with 4 values adjust T - R - B - L */
+  padding: 20px 10px 30px 40px;
 }
 
 /* Margin settings individually */
-.box3{
-    margin-left: 40px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+.box3 {
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /* Margin settings shorthand - on all sides */
-.box4{
-    margin: 10px;
-/* Margin settings for TB and LR */
-    margin: 10px 20px;
-/* Margin settings for T, LR, B */
-    margin: 10px 20px 30px;
-/* Margin settings for T, R, B, L */
-    margin: 10px 20px 30px 40px;
+.box4 {
+  margin: 10px;
+  /* Margin settings for TB and LR */
+  margin: 10px 20px;
+  /* Margin settings for T, LR, B */
+  margin: 10px 20px 30px;
+  /* Margin settings for T, R, B, L */
+  margin: 10px 20px 30px 40px;
 }
 
-
-.mix-borders{
-    background-color: skyblue;
-    height: 200px; 
-    width: 200px;
-/* Individual settings */
-    border-style: dashed;
-    border-style: dotted;
-    border-style: double;
-    border-width: 10px;
-    border-color: tomato;
-/* Shorthand */
-    border: dashed 5px green;
+.mix-borders {
+  background-color: skyblue;
+  height: 200px;
+  width: 200px;
+  /* Individual settings */
+  border-style: dashed;
+  border-style: dotted;
+  border-style: double;
+  border-width: 10px;
+  border-color: tomato;
+  /* Shorthand */
+  border: dashed 5px green;
 }
 
-.circle-container{
-    background-color: aqua;
-    height: 200px;
-    width: 200px;
-/* Curves the edges - can also use percentage. 100px makes a perfectly round border */
-    border-radius: 100px;
-    text-align: center;
+.circle-container {
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+  /* Curves the edges - can also use percentage. 100px makes a perfectly round border */
+  border-radius: 100px;
+  text-align: center;
 }
 
-.circle-container h2{
-    color: red;
-    padding: 60px;
+.circle-container h2 {
+  color: red;
+  padding: 60px;
 }
-
-
