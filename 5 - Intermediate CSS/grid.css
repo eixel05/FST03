@@ -1,5 +1,5 @@
 .gridContainer {
-  display: grid;
+  display: grid; /* Applies to the whole file */
   /* px - fixed value */
   grid-template-columns: 200px 200px 200px 200px;
 
@@ -37,7 +37,7 @@
   /* Desktop and above screen sizes */
   .gridContainer {
     /* not limited to grid manipulation */
-    display: grid;
+    display: grid; /* Already called above, doesn't really need to be added here as well */
     grid-template-columns: repeat(6, 1fr);
     color: blue;
   }
