@@ -1,25 +1,26 @@
-.gridContainer{
-    /* px */
-    grid-template-columns: 200px 200px 200px 200px;
+.gridContainer {
+  display: grid;
+  /* px - fixed value */
+  grid-template-columns: 200px 200px 200px 200px;
 
-    /* auto */
-    /* Adjust automatically based on the content */
-    grid-template-columns: auto auto auto auto;
+  /* auto */
+  /* Adjust automatically based on the content */
+  grid-template-columns: auto auto auto auto;
 
-    /* percentage */
-    grid-template-columns: 33% 33% 33%;
-    border: 2px black solid;
-    padding: 0;
-    /* fr - fractional */
+  /* percentage */
+  grid-template-columns: 33% 33% 33%;
+  border: 2px black solid;
+  padding: 0;
 
-    grid-template-columns: 1fr 1fr 1fr;
+  /* fr - fractional */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* DRY - Don't Repeat Yourself */
+  grid-template-columns: repeat(5, 1fr);
 
-    grid-template-columns: repeat(5, 1fr);
-
-        /* column and row gap */
-    column-gap: 10px;
-    row-gap: 10px;
-    gap: 5px;
+  /* column and row gap */
+  /* column-gap: 10px; */
+  /* row-gap: 10px; */
+  /* gap: 5px; /* Same size */
 }
 
 /* Media Queries */
@@ -31,30 +32,32 @@
     Extra Large Screens, TV: 1201px and greater
 */
 
-/* Desktop-first approach */
+/* Desktop-first approach - From largest to smallest screen size */
 @media screen and (min-width: 1025px) {
-    .gridContainer {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      color: blue;
-    }
+  /* Desktop and above screen sizes */
+  .gridContainer {
+    /* not limited to grid manipulation */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: blue;
   }
-  
-  @media screen and (min-width: 481px) and (max-width: 1024px) {
-    .gridContainer {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .gridContainer {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-    /* Assign specific items to specific columns and rows */
-    .gridItem1{
-    grid-column: 1 / 3; /* Span from column 1 to 3 */
-    grid-row: 1 / 2;    /* Span row 1 */
 }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Assign specific items to specific columns and rows */
+  .gridItem1 {
+    grid-column: 1 / 3; /* Span from column 1 to 3 */
+    grid-row: 1 / 2; /* Span row 1 */
+  }
 }

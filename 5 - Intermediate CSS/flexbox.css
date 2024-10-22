@@ -17,7 +17,7 @@
     align-items: stretch; /* Default */
 
      /* Wrapping the content */
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Default */
     flex-wrap: wrap;
     flex-wrap: wrap-reverse;
 
@@ -27,13 +27,13 @@
     gap: 40px;
 }
 
-/* Willingness of the item grow */
+/* Willingness of the item to grow */
 .flexItem1 {
     flex-grow: 0;
     flex-grow: 1;
   }
 
-/* Willingness of the item shrink */
+/* Willingness of the item to shrink */
 .flexItem3 {
     flex-shrink: 0;
     flex-shrink: 2;
